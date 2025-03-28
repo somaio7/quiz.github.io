@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz sobre Gamificação</title>
+    <link rel="stylesheet" href="css.style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: url('https://images6.alphacoders.com/332/332872.png') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+        }
+
+        .quiz-container {
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            position: relative;
+            display: none;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            font-family: 'Press Start 2P', cursive;
+            font-weight: bold;
+        }
+
+        .question {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .options button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .options button:hover {
+            background-color: #e9e9e9;
+        }
+
+        .options button:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+
+        .feedback {
+            display: none;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .correct {
+            color: green;
+            animation: fadeIn 1s;
+        }
+
+        .incorrect {
+            color: red;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .fireworks {
+            width: 100%;
+            height: 200px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Quiz sobre Gamificação</h1>
+
+    <div class="quiz-container" id="question1">
+        <div class="question">1. O que é gamificação?</div>
+        <div class="options">
+            <button class="option" data-correct="true" data-gif="https://i.gifer.com/QkTq.gif">A) Uso de elementos de jogos para tornar atividades mais divertidas</button>
+            <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">B) Jogar videogames na escola</button>
+            <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">C) Criar jogos de tabuleiro</button>
+            <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">D) Assistir a filmes</button>
+        </div>
+        <div class="feedback correct">Correto!</div>
+        <div class="feedback incorrect">Incorreto. Tente novamente!</div>
+        <div class="fireworks"></div>
+    </div>
+
+    <div class="quiz-container" id="question2">
+        <div class="question">2. Qual é um exemplo de gamificação na sala de aula?</div>
+        <div class="options">
+            <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">A) Fazer lição de casa</button>
+            <button class="option" data-correct="true" data-gif="https://i.gifer.com/QkTq.gif">B) Usar um sistema de pontos para recompensar boas ações</button>
+            <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">C) Ler um livro</button>
+            <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">D) Fazer um teste</button>
+        </div>
+        <div class="feedback correct">Correto!</div>
+        <div class="feedback incorrect">Incorreto. Tente novamente!</div>
+        <div class="fireworks"></div>
+    </div>
+</div>
+<div class="quiz-container" id="question3">
+    <div class="question">3. Como a gamificação pode ajudar os alunos?</div>
+    <div class="options">
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">A) Tornando as aulas mais chatas</button>
+        <button class="option" data-correct="true" data-gif="https://i.gifer.com/QkTq.gif">B) Aumentando o interesse e a participação nas atividades</button>
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">C) Fazendo os alunos dormirem</button>
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">D) Reduzindo o tempo de estudo</button>
+    </div>
+    <div class="feedback correct">Correto!</div>
+    <div class="feedback incorrect">Incorreto. Tente novamente!</div>
+    <div class="fireworks"></div>
+</div>
+<div class="quiz-container" id="question4">
+    <div class="question">4. Qual destes é um elemento comum de gamificação?</div>
+    <div class="options">
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">A) Regras complicadas</button>
+        <button class="option" data-correct="true" data-gif="https://i.gifer.com/QkTq.gif">B) Pontos e recompensas</button>
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">C) Tarefas difíceis</button>
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">D) Trabalhos longos</button>
+    </div>
+    <div class="feedback correct">Correto!</div>
+    <div class="feedback incorrect">Incorreto. Tente novamente!</div>
+    <div class="fireworks"></div>
+</div>
+<div class="quiz-container" id="question5">
+    <div class="question">5. Como a IA pode ajudar você a estudar?</div>
+    <div class="options">
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">A) Jogando videogames</button>
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">B) Assistindo a filmes</button>
+        <button class="option" data-correct="true" data-gif="https://i.gifer.com/QkTq.gif">C) Ajudando a encontrar respostas e explicando assuntos difíceis</button>
+        <button class="option" data-gif-incorrect="https://i.gifer.com/87KO.gif">D) Fazendo compras online</button>
+    </div>
+    <div class="feedback correct">Correto!</div>
+        <div class="feedback incorrect">Incorreto. Tente novamente!</div>
+        <div class="fireworks"></div>
+    </div>
+    <script>
+        const options = document.querySelectorAll('.option');
+        const questions = document.querySelectorAll('.quiz-container');
+        let currentQuestion = 0;
+
+        // Mostrar apenas a primeira questão no início
+        questions.forEach((q, index) => {
+            q.style.display = index === 0 ? 'block' : 'none';
+        });
+
+        options.forEach(option => {
+            option.addEventListener('click', () => {
+                const parent = option.parentElement.parentElement; // Container da pergunta
+                const feedbackCorrect = parent.querySelector('.feedback.correct');
+                const feedbackIncorrect = parent.querySelector('.feedback.incorrect');
+                const fireworks = parent.querySelector('.fireworks');
+                const isCorrect = option.getAttribute('data-correct') === 'true';
+
+                // Resetar visibilidade dos feedbacks
+                feedbackCorrect.style.display = 'none';
+                feedbackIncorrect.style.display = 'none';
+
+                if (isCorrect) {
+                    feedbackCorrect.style.display = 'block'; // Mostra feedback correto
+                    if (fireworks) {
+                        fireworks.style.backgroundImage = `url(${option.getAttribute('data-gif')})`;
+                        fireworks.style.display = 'block';
+                    }
+                } else {
+                    feedbackIncorrect.style.display = 'block'; // Mostra feedback incorreto
+                    if (fireworks) {
+                        fireworks.style.backgroundImage = `url(${option.getAttribute('data-gif-incorrect')})`;
+                        fireworks.style.display = 'block';
+                    }
+                }
+
+                // Aguarda 2 segundos e passa para a próxima questão (se a resposta for correta)
+                setTimeout(() => {
+                    fireworks.style.display = 'none'; // Oculta os GIFs de feedback
+
+                    if (isCorrect) {
+                        parent.style.display = 'none'; // Oculta a questão atual
+                        currentQuestion++;
+                        if (currentQuestion < questions.length) {
+                            questions[currentQuestion].style.display = 'block'; // Mostra a próxima questão
+                        } else {
+                            alert("Quiz finalizado! Obrigado por participar.");
+                        }
+                    }
+                }, 2000);
+            });
+        });
+    </script>
+</body>
+
+</html>
+
+
